@@ -90,5 +90,5 @@ input.btTxt.submit:hover {
 }
 
 html, body {
-  background: transparent !important;
+  background: none!important;
 }
