@@ -1,0 +1,54 @@
+/* 1. Hide header */
+#header.info {
+  display: none !important;
+}
+
+
+/* 2. Required stars red */
+.req {
+  color: #ff0000 !important;
+}
+
+
+/* 3. Submit button red */
+input.btTxt.submit {
+  background-color: #ff0000 !important;
+  border-color: #ff0000 !important;
+  color: #ffffff !important;
+}
+
+input.btTxt.submit:hover {
+  background-color: #cc0000 !important;
+  border-color: #cc0000 !important;
+}
+
+
+/* 4. Name fields half width of email */
+#fo45li1 span {
+  display: inline-block;
+  width: 48%;
+}
+
+#fo45li1 span:first-child {
+  margin-right: 4%;
+}
+
+/* Ensure email stays full width */
+#fo45li3 .field {
+  width: 100% !important;
+}
+
+
+/* 5. Center the form */
+#container {
+  margin: 0 auto !important;
+  max-width: 600px; /* adjust as needed */
+}
+
+
+/* 6. Translucent background */
+#container {
+  background: rgba(255, 255, 255, 0.85); /* white translucent */
+  padding: 30px;
+  border-radius: 8px;
+}
