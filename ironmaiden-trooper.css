@@ -88,3 +88,7 @@ input.btTxt.submit:hover {
 .wufoo li {
   margin-bottom: 16px;
 }
+
+html, body {
+  background: transparent !important;
+}
