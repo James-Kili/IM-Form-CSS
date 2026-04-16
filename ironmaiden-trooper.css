@@ -10,45 +10,81 @@
 }
 
 
-/* 3. Submit button red */
-input.btTxt.submit {
-  background-color: #ff0000 !important;
-  border-color: #ff0000 !important;
-  color: #ffffff !important;
+/* ---------- Translucent container ---------- */
+#container {
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 520px;
+  margin: 40px auto;
 }
 
-input.btTxt.submit:hover {
-  background-color: #cc0000 !important;
-  border-color: #cc0000 !important;
+
+/* ---------- Rounded inputs ---------- */
+.wufoo input.text,
+.wufoo textarea.textarea,
+.wufoo select.select {
+  border-radius: 6px !important;
+  border: 1px solid #ddd !important;
+  padding: 10px !important;
+  width: 100% !important;
+  box-sizing: border-box;
 }
 
 
-/* 4. Name fields half width of email */
+/* ---------- Name fields side-by-side ---------- */
 #fo45li1 span {
-  display: inline-block;
-  width: 48%;
+  display: inline-block !important;
+  width: 48% !important;
+  vertical-align: top;
 }
 
 #fo45li1 span:first-child {
   margin-right: 4%;
 }
 
-/* Ensure email stays full width */
-#fo45li3 .field {
+/* Ensure inputs inside spans fill properly */
+#fo45li1 input.text {
   width: 100% !important;
 }
 
 
-/* 5. Center the form */
-#container {
-  margin: 0 auto !important;
-  max-width: 600px; /* adjust as needed */
+/* ---------- Fix email width (not too long) ---------- */
+#fo45li3 {
+  max-width: 100%;
+}
+
+#fo45li3 input.text {
+  width: 100% !important;
 }
 
 
-/* 6. Translucent background */
-#container {
-  background: rgba(255, 255, 255, 0.85); /* white translucent */
-  padding: 30px;
-  border-radius: 8px;
+/* ---------- Submit button (red + padded) ---------- */
+input.btTxt.submit {
+  background-color: #ff0000 !important;
+  border: none !important;
+  color: #fff !important;
+  padding: 14px 24px !important;
+  font-size: 16px !important;
+  border-radius: 6px !important;
+  cursor: pointer;
+  display: inline-block;
+}
+
+input.btTxt.submit:hover {
+  background-color: #cc0000 !important;
+}
+
+
+/* ---------- Required star ---------- */
+.req {
+  color: #ff0000 !important;
+}
+
+
+/* ---------- Clean spacing ---------- */
+.wufoo li {
+  margin-bottom: 16px;
 }
