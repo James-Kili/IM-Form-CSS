@@ -49,12 +49,6 @@ html.embed {
 }
 
 
-/* ---------- Fix email width ---------- */
-#fo45li3 input.text {
-  width: 100% !important;
-}
-
-
 /* ---------- Submit button ---------- */
 input.btTxt.submit {
   background-color: #ff0000 !important;
@@ -76,3 +70,5 @@ input.btTxt.submit:hover {
 .wufoo li {
   margin-bottom: 16px;
 }
+
+
