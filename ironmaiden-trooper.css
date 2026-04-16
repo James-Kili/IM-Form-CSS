@@ -41,22 +41,6 @@ html.embed {
 }
 
 
-/* ---------- Name fields side-by-side (FIXED) ---------- */
-#fo45li1 {
-  display: flex;
-  gap: 12px; /* cleaner than margin hacks */
-}
-
-#fo45li1 span {
-  flex: 1;
-  width: auto !important;
-}
-
-#fo45li1 span:first-child {
-  margin-right: 0 !important;
-}
-
-
 /* ---------- Mobile fix (prevents clipping) ---------- */
 @media (max-width: 480px) {
   #fo45li1 {
