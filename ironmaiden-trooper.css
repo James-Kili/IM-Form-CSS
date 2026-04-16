@@ -89,10 +89,4 @@ input.btTxt.submit:hover {
   margin-bottom: 16px;
 }
 
-html, body {
-  background: none!important;
-}
 
-#container {
-  background: red !important;
-}
