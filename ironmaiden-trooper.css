@@ -3,10 +3,16 @@
   display: none !important;
 }
 
-
 /* 2. Required stars red */
 .req {
   color: #ff0000 !important;
+}
+
+
+/* ---------- Fix white background ---------- */
+html, body,
+html.embed {
+  background: transparent !important;
 }
 
 
@@ -19,6 +25,7 @@
   padding: 30px;
   max-width: 520px;
   margin: 40px auto;
+  box-sizing: border-box; /* prevents overflow */
 }
 
 
@@ -34,34 +41,37 @@
 }
 
 
-/* ---------- Name fields side-by-side ---------- */
+/* ---------- Name fields side-by-side (FIXED) ---------- */
+#fo45li1 {
+  display: flex;
+  gap: 12px; /* cleaner than margin hacks */
+}
+
 #fo45li1 span {
-  display: inline-block !important;
-  width: 48% !important;
-  vertical-align: top;
+  flex: 1;
+  width: auto !important;
 }
 
 #fo45li1 span:first-child {
-  margin-right: 4%;
-}
-
-/* Ensure inputs inside spans fill properly */
-#fo45li1 input.text {
-  width: 100% !important;
+  margin-right: 0 !important;
 }
 
 
-/* ---------- Fix email width (not too long) ---------- */
-#fo45li3 {
-  max-width: 100%;
+/* ---------- Mobile fix (prevents clipping) ---------- */
+@media (max-width: 480px) {
+  #fo45li1 {
+    flex-direction: column;
+  }
 }
 
+
+/* ---------- Fix email width ---------- */
 #fo45li3 input.text {
   width: 100% !important;
 }
 
 
-/* ---------- Submit button (red + padded) ---------- */
+/* ---------- Submit button ---------- */
 input.btTxt.submit {
   background-color: #ff0000 !important;
   border: none !important;
@@ -78,15 +88,7 @@ input.btTxt.submit:hover {
 }
 
 
-/* ---------- Required star ---------- */
-.req {
-  color: #ff0000 !important;
-}
-
-
 /* ---------- Clean spacing ---------- */
 .wufoo li {
   margin-bottom: 16px;
 }
-
-
