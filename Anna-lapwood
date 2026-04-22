@@ -1,1 +1,73 @@
+/* 1. Hide header */
+#header.info {
+  display: none !important;
+}
 
+/* 2. Required stars colour */
+.req {
+  color: #9087bc !important;
+}
+
+
+/* ---------- Fix white background ---------- */
+html, body,
+html.embed {
+  background: transparent !important;
+}
+
+#fo45li1 span { display: inline-block !important; width: 48% !important; vertical-align: top; }
+
+/* ---------- Translucent container ---------- */
+#container {
+  background: rgba(255, 255, 255, 0.6) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 520px;
+  margin: 40px auto;
+  box-sizing: border-box; /* prevents overflow */
+}
+
+
+/* ---------- Rounded inputs ---------- */
+.wufoo input.text,
+.wufoo textarea.textarea,
+.wufoo select.select {
+  border-radius: 6px !important;
+  border: 1px solid #ddd !important;
+  padding: 10px !important;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+
+/* ---------- Mobile fix (prevents clipping) ---------- */
+@media (max-width: 480px) {
+  #fo45li1 {
+    flex-direction: column;
+  }
+}
+
+
+/* ---------- Submit button ---------- */
+input.btTxt.submit {
+  background-color: #9087bc !important;
+  border: none !important;
+  color: #fff !important;
+  padding: 14px 24px !important;
+  font-size: 16px !important;
+  border-radius: 6px !important;
+  cursor: pointer;
+  display: inline-block;
+}
+
+input.btTxt.submit:hover {
+  background-color: #756ca8 !important; /* darker version of #9087bc */
+}
+
+
+/* ---------- Clean spacing ---------- */
+.wufoo li {
+  margin-bottom: 16px;
+}
