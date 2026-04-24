@@ -3,6 +3,9 @@
   display: none !important;
 }
 
+*{
+  color: white!important}
+
 /* 2. Required stars colour */
 .req {
   color: #9087bc !important;
