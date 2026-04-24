@@ -42,6 +42,7 @@ html.embed {
   padding: 10px !important;
   width: 100% !important;
   box-sizing: border-box;
+   background: rgba(255, 255, 255, 0.4) !important;
 }
 
 
