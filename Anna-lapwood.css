@@ -32,6 +32,8 @@ html.embed {
   box-sizing: border-box; /* prevents overflow */
 }
 
+.wufoo label{
+  color:white!important}
 
 /* ---------- Rounded inputs ---------- */
 .wufoo input.text,
