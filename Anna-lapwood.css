@@ -64,11 +64,21 @@ input.btTxt.submit {
   font-size: 16px !important;
   border-radius: 6px !important;
   cursor: pointer;
-  display: inline-block;
+  width:100%;
 }
 
 input.btTxt.submit:hover {
   background-color: #756ca8 !important; /* darker version of #9087bc */
+}
+
+.legend#title110, .legend#title211 {
+font-weight:normal!important;
+  font-size:10px!important;
+}
+
+span.choice__text.notranslate {
+    font-size: 10px;
+    font-weight: 100!important;
 }
 
 
