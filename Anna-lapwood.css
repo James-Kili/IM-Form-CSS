@@ -7,9 +7,10 @@
   color: white!important}
 
 /* 2. Required stars colour */
-.req {
+form span.req {
   color: #9087bc !important;
 }
+
 
 
 /* ---------- Fix white background ---------- */
