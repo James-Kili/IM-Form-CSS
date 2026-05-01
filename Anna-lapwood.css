@@ -85,7 +85,10 @@ span.choice__text.notranslate {
   display:none!important;
 }
 
-/* ---------- Clean spacing ---------- */
 .wufoo li {
   margin-bottom: 4px!important;
+}
+
+form.wufoo {
+   padding: none!important;
 }
