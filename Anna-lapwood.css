@@ -39,12 +39,11 @@ html.embed {
 .wufoo input.text,
 .wufoo textarea.textarea,
 .wufoo select.select {
-  border-radius: 6px !important;
-  border: 1px solid #ddd !important;
+  border: none!important;
   padding: 10px !important;
   width: 100% !important;
   box-sizing: border-box;
-   background: rgba(255, 255, 255, 0.2) !important;
+   background: #333333 !important;
 }
 
 
